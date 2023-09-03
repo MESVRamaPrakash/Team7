@@ -175,3 +175,31 @@ body:hover ~ .cursor1 {
 body:hover ~ .cursor2 {
     opacity: 0;
 }
+
+@media only screen and (max-width:600px) {
+    body{
+        width:500px;
+        overflow-x: hidden;
+    }
+    .flip-card {
+        display:flex;
+        width:80%;
+        margin-left: auto;
+        margin-right: auto;
+        height:auto;
+        flex-direction: column;
+        position:absolute;
+    }
+    .flip-card-inner1{
+        width:400px;
+        height:400px;
+    }
+    .flip-card-inner2{
+        width:400px;
+        height:400px;
+    }
+    .flip-card-inner3{
+        width:400px;
+        height:400px;
+    }
+}

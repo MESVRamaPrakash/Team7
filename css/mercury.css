@@ -119,6 +119,31 @@ body {
     color:#000;
 }
 
+@media only screen and (max-width:600px) {
+    .contain{
+        width:400px !important;
+    }
+    .nav ul {
+        margin-left:100px !important;
+        position: absolute;
+    }
+    .nav .logo{
+        position:absolute !important;
+        top:0 !important;
+        left:-100px !important;
+        width:400px !important;
+    }
+    .nav ul li a {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:1050px) and (min-width:600px) {
+    .contain .nav ul{
+        display: none;
+    }
+}
+
 /* contactus */
 
 #contact {
@@ -143,7 +168,7 @@ body {
     height: 16rem;
     position: absolute;
     z-index:0;
-    top:600px;
+    top:605px;
     background-image: linear-gradient(180deg,transparent,rgba(55, 55, 55, 0.6),#333);
 }
 
@@ -401,4 +426,142 @@ body:hover ~ .cursor2 {
 
 .footer .col a:hover {
     color:#d3d3d3;
+}
+
+@media only screen and (max-width:600px) {
+    * {
+        overflow-x: hidden;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    #preloader_child {
+        display: none;
+    }
+    video {
+        width:100%;
+    }  
+    .icons {
+        display: none;
+    }
+    .banner-faded {
+        display: none;
+    }
+    .mid-nav {
+        position: sticky !important;
+        top:285px !important;
+        left:180px !important;
+        background-color: #000 !important;
+    }
+    .about {
+        background-color: #000;
+        width: 100%;
+        height: 1000px;
+    }
+    .about h1 {
+        text-align: center;
+        color: #fff;
+        font-size: 30px;
+        font-weight: 600;
+        padding-top:80px !important;
+    }
+    
+    .about-mercury {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    /* 3d object earth */
+    /* #aSide {
+        height: 300px;
+        width: 300px;
+    
+    } */
+    /* This styles the 3D object inserted in the aside container */
+    #aSide model-viewer {
+        height: 300px;
+        width: 300px;
+        border: none;
+        outline: none;
+        padding-top: 40px;
+    }
+    
+    .desc {
+        color: #a2a2a2;
+        padding-top: 60px;
+        font-size: 16px;
+        width:80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .desc:hover {
+        color:#dfdcdc;
+    }
+    .cont {
+        width: 100%;
+        height: auto;
+        background-color: #000;
+        color: #fff;
+    }
+    
+    .cont h1 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+        padding-top: 40px;
+    }
+    
+    .circle {
+        border-radius: 50%;
+        border:2px solid #fff;
+        width:30px;
+        height:30px;
+        text-align: center;
+        font-size: 17px;
+        margin-left: 120px;
+        margin-bottom: 30px;
+    }
+    .circle2 {
+        margin-left:120px !important;
+    }
+    .cards1 {
+        margin-top: 70px;
+    }
+    
+    .cards1,
+    .cards2,
+    .cards3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width:80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cards1,.cards2 {
+        border-bottom:none;
+        margin-bottom: 20px;
+    }
+    .card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8 {
+        width: 300px;
+        height: auto;
+        text-align: center;
+        border-right:none;
+        margin-bottom: 30px !important;
+        padding-right: 33px;
+        font-size: 17px !important;
+    }
+    .card2,
+    .card3,
+    .card5,
+    .card6,
+    .card8,
+    .card9 {
+        width: 300px;
+        height: auto;
+        margin-left: 0px;
+        text-align: center;
+    }
+    
 }

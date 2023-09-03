@@ -143,7 +143,7 @@ body {
     height: 16rem;
     position: absolute;
     z-index:0;
-    top:610px;
+    top:605px;
     background-image: linear-gradient(180deg,transparent,rgba(55, 55, 55, 0.6),#333);
 }
 
@@ -342,4 +342,26 @@ body:hover ~ .cursor2 {
 
 .footer .col a:hover {
     color:#d3d3d3;
+}
+
+@media only screen and (max-width:600px) {
+    * {
+        overflow-x: hidden;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    #preloader_child {
+        display: none;
+    }
+    video {
+        width:100%;
+    }  
+    .icons {
+        display: none;
+    }
+    .banner-faded {
+        display: none;
+    }
+
 }

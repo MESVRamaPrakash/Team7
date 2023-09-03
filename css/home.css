@@ -119,6 +119,32 @@ body {
     color:#000;
 }
 
+@media only screen and (max-width:600px) {
+    .contain{
+        width:400px !important;
+    }
+    .nav ul {
+        margin-left:100px !important;
+        position: absolute;
+    }
+    .nav .logo{
+        position:absolute !important;
+        top:0 !important;
+        left:-100px !important;
+        width:400px !important;
+    }
+    .nav ul li a {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:1050px) and (min-width:600px) {
+    .contain .nav ul{
+        display: none;
+    }
+}
+
+
 /* contactus */
 
 #contact {
@@ -353,10 +379,10 @@ body {
     }
 }
 
-@media only screen and (max-width: 767px) {
+
+@media only screen and (max-width: 600px) {
     .main-timeline:before {
-        margin: 0;
-        left: 7px
+        display: none;
     }
 
     .main-timeline .timeline {
@@ -372,9 +398,37 @@ body {
     }
 
     .main-timeline .date-content {
-        width: 95%;
-        float: right;
+        width: 100%;
         margin-top: 0
+    }
+
+    .main-timeline .date-content a{
+        width: 100%;
+        margin:0 -20px 0 -35px !important;
+    }
+
+    .main-timeline .date-content .img2{
+        margin:0 0 0 -130px !important;
+    }
+
+    .container-fluid .main-timeline .timeline-content .title{
+        font-size: 29px !important;
+        font-weight: 800 !important;
+        width:100% !important;
+        text-align: center !important;
+    }
+
+    .container-fluid .main-timeline .timeline-content #jupiter{
+        width:100% !important;
+        margin-bottom: -10px !important;
+        text-align: center !important;
+        margin-top:-10px !important;
+    }
+
+    .container-fluid .main-timeline .timeline-content .description {
+        text-align: center !important;
+        width:100% !important;
+        margin:0 -10px 20px -10px !important;
     }
 
     .main-timeline .date-content:before {
@@ -386,11 +440,11 @@ body {
         height: 110px
     }
 
-    .main-timeline .date-outer:before,
+    /* .main-timeline .date-outer:before,
     .main-timeline .date-outer:after {
         width: 110px;
         height: 110px
-    }
+    } */
 
     .main-timeline .date {
         top: 30%
@@ -404,13 +458,14 @@ body {
     .main-timeline .timeline:nth-child(2n) .timeline-content {
         width: 95%;
         text-align: center;
-        padding: 10px 0
+        padding: 0px 0
     }
 
     .main-timeline .title {
-        margin-bottom: 10px
+        margin-bottom: 0px
     }
 }
+
 
 /* video */
 video {
@@ -551,4 +606,26 @@ body:hover ~ .cursor2 {
 
 .footer .col a:hover {
     color:#d3d3d3;
+}
+
+@media only screen and (max-width:600px) {
+    * {
+        overflow-x: hidden;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    #preloader_child {
+        display: none;
+    }
+    video {
+        width:100%;
+    }  
+    .icons {
+        display: none;
+    }
+    .banner-faded {
+        display: none;
+    }
+
 }

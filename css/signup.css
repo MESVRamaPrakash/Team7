@@ -238,3 +238,23 @@ body:hover ~ .cursor2 {
 i:hover {
     opacity:.7;
 }
+
+@media only screen and (max-width:600px) {
+    * {
+        /* overflow : hidden;
+         */
+         background-color: black;
+    }
+    body {
+        width:500px;
+        height:700px;
+        
+        /* overflow-x:hidden; */
+    }
+    video {
+       display:none;
+    }
+    .container a i {
+        display:none;
+    }
+}
